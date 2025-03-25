@@ -1,6 +1,6 @@
 module Examples.AddingAnAttributeToPursx where
 
-import Deku.Toplevel (runInBody)
+import Deku.SPA (runInBody)
 import Effect (Effect)
 import Data.Foldable (oneOf)
 import Prelude

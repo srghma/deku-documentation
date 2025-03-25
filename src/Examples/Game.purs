@@ -28,7 +28,7 @@ import Deku.DOM.SVG as DS
 import Deku.DOM.SVG.Attributes as DSA
 import Deku.Do as Deku
 import Deku.Hooks (guardWith, useDynAtEnd, useHot, useState)
-import Deku.Toplevel (runInBody)
+import Deku.SPA (runInBody)
 import Effect (Effect)
 import Effect.Random (randomBool, randomRange)
 import Effect.Timer (clearTimeout)

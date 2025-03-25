@@ -10,7 +10,7 @@ import Deku.DOM.Listeners as DL
 import Deku.Do as Deku
 import Deku.Effect as DE
 import Deku.Hooks as DH
-import Deku.Toplevel (runInBody)
+import Deku.SPA (runInBody)
 import Effect (Effect)
 import Effect.Random (random)
 import ExampleAssitant (ExampleSignature)

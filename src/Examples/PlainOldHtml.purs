@@ -1,6 +1,6 @@
 module Examples.PlainOldHtml where
 
-import Deku.Toplevel (runInBody)
+import Deku.SPA (runInBody)
 import Effect (Effect)
 import Prelude
 import ExampleAssitant (ExampleSignature)

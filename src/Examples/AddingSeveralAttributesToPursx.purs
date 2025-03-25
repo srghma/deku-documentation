@@ -1,6 +1,6 @@
 module Examples.AddingSeveralAttributesToPursx where
 
-import Deku.Toplevel (runInBody)
+import Deku.SPA (runInBody)
 import Prelude
 import Data.Foldable (oneOf)
 import ExampleAssitant (ExampleSignature)

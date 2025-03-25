@@ -1,6 +1,6 @@
 module Examples.AddingSeveralElementsToPursx where
 
-import Deku.Toplevel (runInBody)
+import Deku.SPA (runInBody)
 import Prelude
 import Web.PointerEvent.PointerEvent (PointerEvent)
 import FRP.Poll (Poll)

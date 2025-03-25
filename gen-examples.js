@@ -20,7 +20,7 @@ const examplesJsContent = examples.map(example => {
             O.push(line);
         } else {
             if (IN_IMPORTS) {
-                O.push('import Deku.Toplevel (runInBody)');
+                O.push('import Deku.SPA (runInBody)');
                 IN_IMPORTS = false;
                 O.push(line);
             } else if (line.startsWith('main')) {

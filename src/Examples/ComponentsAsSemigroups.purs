@@ -1,6 +1,6 @@
 module Examples.ComponentsAsSemigroups where
 
-import Deku.Toplevel (runInBody)
+import Deku.SPA (runInBody)
 import Effect (Effect)
 import Prelude
 

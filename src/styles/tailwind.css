@@ -1,10 +1,17 @@
-@import 'tailwindcss';
-@import './fonts.css' layer(base);
-@import './docsearch.css' layer(base);
-@import './prism.css' layer(base);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@plugin '@tailwindcss/typography';
-@plugin 'flowbite/plugin';
+/* @import './fonts.css' layer(base); */
+/* @import './docsearch.css' layer(base); */
+/* @import './prism.css' layer(base); */
+
+@source './fonts.css';
+@source './docsearch.css';
+@source './prism.css';
+
+/* @plugin '@tailwindcss/typography'; */
+/* @plugin 'flowbite/plugin'; */
 
 @custom-variant dark (&:is(.dark *));
 
@@ -39,12 +46,14 @@
 
   --color-alexander: #d1f479;
 
-  --font-sans: Inter, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+  --font-sans:
+    Inter, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --font-display: Lexend, ui-sans-serif, system-ui, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --font-aldine: 'Aldine 721', ui-serif, Georgia, Cambria, 'Times New Roman',
-    Times, serif;
+  --font-display:
+    Lexend, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-aldine:
+    'Aldine 721', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
   --font-pinyon: 'Pinyon Script';
 
   --container-8xl: 88rem;

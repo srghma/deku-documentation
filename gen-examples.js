@@ -104,7 +104,7 @@ exampleToSlug :: ExampleADT -> String
 `;
 
 examples.forEach(example => {
-    const lex = example[0].toLowerCase() + example.slice(1, -5);
+    // const lex = example[0].toLowerCase() + example.slice(1, -5);
     examplesPursContent += `exampleToSlug ${example.slice(0, -5)} = "${example.slice(0, -5)}"\n`;
 });
 
@@ -123,7 +123,7 @@ fs.writeFileSync(examplesPursPath, examplesPursContent);
 const indexPath = path.join('./src', 'index.js');
 const indexContent = [
     ...examples.map(example => {
-        const lex = example[0].toLowerCase() + example.slice(1, -5);
+        // const lex = example[0].toLowerCase() + example.slice(1, -5);
         const bex = example.slice(0, -5);
         return `import * as ${bex} from "PureScript/Examples.${bex}/index.js";`;
     }),
